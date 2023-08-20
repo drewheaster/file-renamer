@@ -7,9 +7,7 @@ import smartsheet
 import inquirer
 import sys
 
-#tell the user what brand they are working with
 print('--L-COM File Renamer--')
-# gid=input('What is the GID? ')
 
 file=input('Enter a part number to copy: ')+'.jpg'
 
