@@ -43,6 +43,8 @@ for i in range(len(contents)):
 for i in range(len(fast_photo_paths)):
     shutil.copy(fast_photo_paths[i], fast_photo_paths[i].replace('.jpg', '') + endings[i])
 
+#write a function to take the elements of list [contents] and create directory paths to them
+
 my_paths = {
     glob.glob(os.path.join(fast_photo_path_500.replace(file,''), '*_500x500_View1*'), recursive=True)[0]: images_500,
     glob.glob(os.path.join(fast_photo_path_250.replace(file,''), '*_250x250_View1*'), recursive=True)[0]: images_250, 
