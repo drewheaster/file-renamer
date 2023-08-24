@@ -6,6 +6,8 @@ import requests
 import smartsheet
 import sys
 
+profile = os.environ['USERPROFILE']
+
 print('--L-COM File Renamer--')
 
 file=input('Enter a part number to copy: ')+'.jpg'
@@ -20,17 +22,17 @@ while True:
     contents.append(line)
 
 
-fast_photo_path_500='C:/Users/drewh/OneDrive/Desktop/FastPhoto/L-COM/500x500/'+ file
-fast_photo_path_250='C:/Users/drewh/OneDrive/Desktop/FastPhoto/L-COM/250x250/'+ file
-fast_photo_path_100='C:/Users/drewh/OneDrive/Desktop/FastPhoto/L-COM/100x100/'+ file
+fast_photo_path_500=profile+'/OneDrive/Desktop/FastPhoto/L-COM/500x500/'+ file
+fast_photo_path_250=profile+'/OneDrive/Desktop/FastPhoto/L-COM/250x250/'+ file
+fast_photo_path_100=profile+'/OneDrive/Desktop/FastPhoto/L-COM/100x100/'+ file
 
 fast_photo_paths = [ fast_photo_path_500, fast_photo_path_250, fast_photo_path_100 ]
 
 endings = ['_500x500_View1.jpg', '_250x250_View1.jpg', '_100x100_View1.jpg']
 
-images_500='C:/Users/drewh/OneDrive/Desktop/Images/LARGE/'
-images_250='C:/Users/drewh/OneDrive/Desktop/Images/MEDIUM/'
-images_100='C:/Users/drewh/OneDrive/Desktop/Images/SMALL/'
+images_500=profile+'/OneDrive/Desktop/Images/LARGE/'
+images_250=profile+'/OneDrive/Desktop/Images/MEDIUM/'
+images_100=profile+'/OneDrive/Desktop/Images/SMALL/'
 
 new_contents=[]
 new_contents_500=[]
